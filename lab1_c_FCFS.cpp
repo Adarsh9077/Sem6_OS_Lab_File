@@ -39,14 +39,14 @@ int main()
     cout << fixed << setprecision(2);
     for (int i = 0; i < n; i++)
     {
-        cout << "\nEnter Process" << i << "Arrival Time: ";
+        cout << "\nEnter Process " << i << " Arrival Time: ";
         cin >> ps[i].at;
         ps[i].pid = i;
     }
 
     for (int i = 0; i < n; i++)
     {
-        cout << "\nEnter Process" << i << "Burst Time: ";
+        cout << "\nEnter Process " << i << " Burst Time: ";
         cin >> ps[i].bt;
     }
 
@@ -74,15 +74,16 @@ int main()
     // Output
     cout << "\nProcess No.\tAT\tCPU Burst Time\tCT\tTAT\tWT\tRT\n";
     for (int i = 0; i < n; i++)
-        cout << i << "\t\t" << ps[i].at << "\t" << ps[i].bt << "\t\t" << ps[i].ct << "\t" << ps[i].tat << "\t" << ps[i].wt << "\t" << ps[i].rt << endl;
+        cout << i << "\t\t" << ps[i].at << "\t" << ps[i].bt << "\t\t" << ps[i].ct 
+        << "\t" << ps[i].tat << "\t" << ps[i].wt << "\t" << ps[i].rt << endl;
     cout << endl;
 
     cpu_utilization = (float)(length_cycle - total_idle_time) / length_cycle;
 
-    cout << "\nAverage Turn Around time= " << sum_tat / n;
-    cout << "\nAverage Waiting Time= " << sum_wt / n;
-    cout << "\nAverage Response Time= " << sum_rt / n;
-    cout << "\nThroughput= " << n / (float)length_cycle;
-    cout << "\nCPU Utilization(Percentage)= " << cpu_utilization * 100;
+    cout << "\nAverage Turn Around time = " << sum_tat / n;
+    cout << "\nAverage Waiting Time = " << sum_wt / n;
+    cout << "\nAverage Response Time = " << sum_rt / n;
+    cout << "\nThroughput = " << n / (float)length_cycle;
+    cout << "\nCPU Utilization(Percentage) = " << cpu_utilization * 100;
     return 0;
 }

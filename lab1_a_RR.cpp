@@ -47,7 +47,7 @@ int main()
     cout << fixed << setprecision(2);
 
     for (int i = 0; i < n; i++)
-    {   
+    {
         cout << "\nEnter Process " << i << " Arrival Time: ";
         cin >> ps[i].at;
         ps[i].pid = i;
@@ -147,7 +147,10 @@ int main()
     // Output
     cout << "\nProcess No.\tAT\tCPU Burst Time\tStart Time\tCT\tTAT\tWT\tRT\n";
     for (int i = 0; i < n; i++)
-        cout << i << "\t\t" << ps[i].at << "\t" << ps[i].bt << "\t\t" << ps[i].start_time << "\t\t" << ps[i].ct << "\t" << ps[i].tat << "\t" << ps[i].wt << "\t" << ps[i].rt << endl;
+        cout << i << "\t\t" 
+        << ps[i].at << "\t" << ps[i].bt << "\t\t" << ps[i].start_time << "\t\t" 
+        << ps[i].ct << "\t" << ps[i].tat << "\t" << ps[i].wt << "\t" << ps[i].rt 
+        << endl;
     cout << endl;
 
     cout << "\nAverage Turn Around time= " << (float)sum_tat / n;
