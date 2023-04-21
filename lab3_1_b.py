@@ -9,7 +9,8 @@ mp = []
 tif = 0
 
 for i in range(n):
-    mp.append(int(input(f"Enter memory required for process {i+1} (in Bytes) -- ")))
+    mp.append(
+        int(input(f"Enter memory required for process {i+1} (in Bytes) -- ")))
 
 print(f"\nNo. of Blocks available in memory -- {nob}")
 print("\nPROCESS\tMEMORY REQUIRED\tALLOCATED\tINTERNAL FRAGMENTATION")
@@ -31,4 +32,4 @@ if i+1 < n:
     print("\nMemory is Full, Remaining Processes cannot be accommodated")
 
 print(f"\nTotal Internal Fragmentation is {tif}")
-print(f"Total External Fragmentation is {ef}","\n\n")
+print(f"Total External Fragmentation is {ef}", "\n\n")

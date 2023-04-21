@@ -144,10 +144,10 @@ int main()
     // Output
     cout << "\nProcess No.\tAT\tCPU Burst Time\tStart Time\tCT\tTAT\tWT\tRT\n";
     for (int i = 0; i < n; i++)
-        cout << i << "\t\t" 
-        << ps[i].at << "\t" << ps[i].bt << "\t\t" << ps[i].start_time << "\t\t" 
-        << ps[i].ct << "\t" << ps[i].tat << "\t" << ps[i].wt << "\t" << ps[i].rt 
-        << endl;
+        cout << i << "\t\t"
+             << ps[i].at << "\t" << ps[i].bt << "\t\t" << ps[i].start_time << "\t\t"
+             << ps[i].ct << "\t" << ps[i].tat << "\t" << ps[i].wt << "\t" << ps[i].rt
+             << endl;
     cout << endl;
 
     cout << "\nAverage Turn Around time= " << (float)sum_tat / n;
@@ -155,6 +155,6 @@ int main()
     cout << "\nAverage Response Time= " << (float)sum_rt / n;
     cout << "\nThroughput= " << n / (float)length_cycle;
     cout << "\nCPU Utilization(Percentage)= " << cpu_utilization * 100;
-    cout <<"My name is Adarsh Bhardwaj";
+    cout << "My name is Adarsh Bhardwaj";
     return 0;
 }

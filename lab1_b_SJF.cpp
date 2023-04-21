@@ -103,8 +103,8 @@ int main()
     // Output
     cout << "\nProcess No.\tAT\tCPU Burst Time\tCT\tTAT\tWT\tRT\n";
     for (int i = 0; i < n; i++)
-        cout << i << "\t\t" << ps[i].at << "\t" << ps[i].bt << "\t\t" << ps[i].ct 
-        << "\t" << ps[i].tat << "\t" << ps[i].wt << "\t" << ps[i].rt << endl;
+        cout << i << "\t\t" << ps[i].at << "\t" << ps[i].bt << "\t\t" << ps[i].ct
+             << "\t" << ps[i].tat << "\t" << ps[i].wt << "\t" << ps[i].rt << endl;
     cout << endl;
 
     cpu_utilization = (float)(length_cycle - total_idle_time) / length_cycle;
