@@ -22,4 +22,4 @@ for i in range(n):
     print(f"\t{i+1}\t\t{mp[i]}")
 
 print(f"\nTotal Memory Allocated is {ms - temp}")
-print(f"Total External Fragmentation is {temp}")
+print(f"Total External Fragmentation is {temp}","\n\n")

@@ -31,4 +31,4 @@ if i+1 < n:
     print("\nMemory is Full, Remaining Processes cannot be accommodated")
 
 print(f"\nTotal Internal Fragmentation is {tif}")
-print(f"Total External Fragmentation is {ef}")
+print(f"Total External Fragmentation is {ef}","\n\n")
