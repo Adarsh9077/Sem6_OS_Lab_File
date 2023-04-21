@@ -1,3 +1,4 @@
+# MFT
 ms = int(input("Enter the total memory available (in Bytes) -- "))
 bs = int(input("Enter the block size (in Bytes) -- "))
 nob = ms // bs
