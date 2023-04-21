@@ -19,9 +19,6 @@ bool comparatorAT(struct process_struct a, struct process_struct b)
     int x = a.at;
     int y = b.at;
     return x < y;
-    //    if(x > y)
-    //      return false;  // Apply sorting
-    //    return true;   // no sorting
 }
 
 bool comparatorPID(struct process_struct a, struct process_struct b)
