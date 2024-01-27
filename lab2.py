@@ -56,6 +56,5 @@ def algo():
         print(" P", ans[i], " ->", sep="", end="")
     print(" P", ans[n_Processes - 1], sep="")
 
-
 # DRIVER CODE OR MAIN CODE.
 algo()

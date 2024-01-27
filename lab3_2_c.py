@@ -3,7 +3,6 @@
 from typing import List
 from collections import defaultdict
 
-
 def pageFaults(n, c, pages):
     count = 0
 
@@ -48,7 +47,6 @@ def pageFaults(n, c, pages):
             k -= 1
 
     return count
-
 
 if __name__ == '__main__':
     pages = [1, 2, 3, 4, 2, 1, 5]

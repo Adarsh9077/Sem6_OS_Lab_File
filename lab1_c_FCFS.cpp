@@ -1,7 +1,6 @@
 #include <iostream>
 #include <algorithm>
 #include <iomanip>
-
 using namespace std;
 struct process_struct
 {
